@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Are You BORED?
+  form(action='/bored', method='POST')
+    p
+      | Number of Participants:
+      input(type='number', name='people', value='')
+
+    input(type='submit', value='Submit')
+
